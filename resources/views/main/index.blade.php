@@ -9,6 +9,7 @@
                     <form action="" class="form-body w-75 bg-white shadow p-4">
                         <div class="row border-bottom border-3 border-danger py-3">
                             <h1 class="text-uppercase">Loan application form</h1>
+                            {{-- new comment --}}
                         </div>
                         <div class="main-form">
                             <div class="typeOfLoan row border-bottom border-3 border-danger py-3">
