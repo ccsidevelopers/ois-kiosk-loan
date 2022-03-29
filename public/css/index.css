@@ -1,0 +1,14 @@
+/* mobile */
+@media (max-width: 991px) {
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    .main-form {
+        padding-bottom: 20px !important;
+    }
+    .form-body {
+        width: 70% !important;
+        padding: 50px !important;
+    }
+}
