@@ -3,7 +3,8 @@ $(function() {
     insertEndorsements();
     isAgreementChecked();
     isAddressTheSame();
-    isOtherInputChecked()
+    isOtherInputChecked();
+    getTypeOfLoan();
 });
 
 // Store data into the Database
@@ -222,4 +223,23 @@ function isOtherInputChecked() {
     });
 }
 
+function getTypeOfLoan() {
 
+    // Reusable function for Type of loan repetitive code
+    function isTOLChecked(typeOfLoanID){
+        typeOfLoanID.click(function() {
+    
+            var isCheck = $(this).is(':checked');
+            var TOLVal = typeOfLoanID.val();
+    
+            isCheck ? true : false;
+            console.log(isCheck, TOLVal);
+        });
+    }
+        
+    // Call your function here
+    $('#inputLoanMotorcycleLoan').click(isTOLChecked($('#inputLoanMotorcycleLoan')));
+    $('#inputLoanAutoLoan').click(isTOLChecked($('#inputLoanAutoLoan')));
+    $('#inputLoanPersonalLoan').click(isTOLChecked($('#inputLoanPersonalLoan')));
+    $('#inputLoanHomeLoan').click(isTOLChecked($('#inputLoanHomeLoan')));
+}

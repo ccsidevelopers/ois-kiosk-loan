@@ -17,21 +17,21 @@
                                 </div>
                                 <div class="form-group col-md-2 py-2">
                                     <div class="my-2">
-                                        <input type="checkbox" class="text-uppercase TOLSelect" id="inputLoanMotorcycleLoan" name="" value="Motorcycle loan">
+                                        <input type="checkbox" class="text-uppercase chbChecked" id="inputLoanMotorcycleLoan" name="" value="Motorcycle loan">
                                         <label for="inputLoanMotorcycleLoan">Motorcycle Loan</label>
                                     </div>
                                     <div class="my-2">
-                                        <input type="checkbox" class=" text-uppercase TOLSelect" id="inputLoanAutoLoan" name="" value="Auto loan">
+                                        <input type="checkbox" class=" text-uppercase chbChecked" id="inputLoanAutoLoan" name="" value="Auto loan">
                                         <label for="inputLoanAutoLoan">Auto loan</label>
                                     </div>
                                 </div>
                                 <div class="form-group col-md-4 py-2">
                                     <div class="my-2">
-                                        <input type="checkbox" class=" text-uppercase TOLSelect" id="inputLoanPersonalLoan" name="" value="Personal loan">
+                                        <input type="checkbox" class=" text-uppercase chbChecked" id="inputLoanPersonalLoan" name="" value="Personal loan">
                                         <label for="inputLoanPersonalLoan">Personal / Salary Loan</label>
                                     </div>
                                     <div class="my-2">
-                                        <input type="checkbox" class=" text-uppercase TOLSelect" id="inputLoanHomeLoan" name="" value="Home loan">
+                                        <input type="checkbox" class=" text-uppercase chbChecked" id="inputLoanHomeLoan" name="" value="Home loan">
                                         <label for="inputLoanHomeLoan">Home / Housing Loan</label>
                                     </div>
                                     <input type="hidden" id="TOLTempStorage">
