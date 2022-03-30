@@ -230,14 +230,11 @@ function getTypeOfLoan() {
         typeOfLoanID.click(function() {
     
             var isCheck = $(this).is(':checked');
-            var TOLVal = typeOfLoanID.val();
-    
             isCheck ? true : false;
-            console.log(isCheck, TOLVal);
         });
     }
         
-    // Call your function here
+    // Reuse the function here
     $('#inputLoanMotorcycleLoan').click(isTOLChecked($('#inputLoanMotorcycleLoan')));
     $('#inputLoanAutoLoan').click(isTOLChecked($('#inputLoanAutoLoan')));
     $('#inputLoanPersonalLoan').click(isTOLChecked($('#inputLoanPersonalLoan')));
