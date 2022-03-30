@@ -34,7 +34,10 @@ function insertEndorsements() {
         
         
         var formData = new FormData();
-        var type_of_loan_data = $('#TOLTempStorage').val();
+        var motorcycle_loan_data = $('#inputLoanMotorcycleLoan').val();
+        var auto_loan_data = $('#inputLoanAutoLoan').val();
+        var personal_salary_loan_data = $('#inputLoanPersonalLoan').val();
+        var home_housing_loan_data = $('#inputLoanHomeLoan').val();
         var applicant_lname_data = $('#inputLoanLName').val();
         var applicant_fname_data = $('#inputLoanFName').val();
         var applicant_mname_data = $('#inputLoanMName').val();
@@ -79,7 +82,10 @@ function insertEndorsements() {
         var years_with_employer_in_business_data = $('#inputLoanYearsWithEmployer').val();
         var months_with_employer_in_business_data = $('#inputLoanMonthsWithEmployer').val();
     
-        formData.append('type_of_loan', type_of_loan_data);
+        formData.append('motorcycle_loan', motorcycle_loan_data);
+        formData.append('auto_loan', auto_loan_data);
+        formData.append('personal_salary_loan', personal_salary_loan_data);
+        formData.append('home_housing_loan', home_housing_loan_data);
         formData.append('applicant_lname', applicant_lname_data);
         formData.append('applicant_fname', applicant_fname_data);
         formData.append('applicant_mname', applicant_mname_data);
@@ -228,9 +234,9 @@ function getTypeOfLoan() {
     // Reusable function for Type of loan repetitive code
     function isTOLChecked(typeOfLoanID){
         typeOfLoanID.click(function() {
-    
+
             var isCheck = $(this).is(':checked');
-            isCheck ? true : false;
+            isCheck ? typeOfLoanID.val(true) : false;
         });
     }
         

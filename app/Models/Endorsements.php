@@ -9,9 +9,7 @@ use Illuminate\Support\Facades\Validator;
 class Endorsements extends Model
 {   
 
-    
     public $table = 'endorsements';
-
 
     /**
      * store endorsement data
@@ -25,8 +23,7 @@ class Endorsements extends Model
         try {
             $validator = Validator::make($data, [
                 //validation
-                'applicant_lname' => "required"
-
+                // 'applicant_lname' => "required"
             ]);
 
             // dd($validator->fails());
