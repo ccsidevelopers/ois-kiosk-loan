@@ -856,7 +856,7 @@
           "active": false,
           "left": 16,
           "top": 12,
-          "zIndex": 483,
+          "zIndex": 2,
           "widthName": 84.3798828125,
           "widthComment": 60
         },
@@ -1010,7 +1010,7 @@
           "active": false,
           "left": 667,
           "top": 597,
-          "zIndex": 482,
+          "zIndex": 1,
           "widthName": 172.5615234375,
           "widthComment": 60
         },
@@ -1116,7 +1116,7 @@
           {
             "name": "endorsement_address_type",
             "comment": "",
-            "dataType": "VARCHAR(55)",
+            "dataType": "INT(11)",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -1131,7 +1131,7 @@
               "pfk": false,
               "widthName": 163.16064453125,
               "widthComment": 60,
-              "widthDataType": 87.71875,
+              "widthDataType": 60,
               "widthDefault": 60
             },
             "id": "ee283726-9cec-4dc9-b6a0-a385b00748f1"
@@ -1164,7 +1164,7 @@
           "active": true,
           "left": 31,
           "top": 1005,
-          "zIndex": 485,
+          "zIndex": 5,
           "widthName": 137.85888671875,
           "widthComment": 60
         },
