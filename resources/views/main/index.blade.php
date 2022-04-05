@@ -250,21 +250,21 @@
                                     <div class="row">
                                         <div class="col-md-3 d-flex flex-column">
                                             <div class="my-1">
-                                                <input type="radio" class="text-uppercase radioSOI" id="inputLoanIncomeEmployment" name="SourceOfIncome" value="Employment">
+                                                <input type="radio" class="text-uppercase radioSOI" id="inputLoanIncomeEmployment" name="sourceOfIncome" value="Employment">
                                                 <label for="inputLoanIncomeEmployment">Employment</label>
                                             </div>
                                             <div class="my-1">
-                                                <input type="radio" class="text-uppercase radioSOI" id="inputLoanIncomeBusiness" name="SourceOfIncome" value="Business">
+                                                <input type="radio" class="text-uppercase radioSOI" id="inputLoanIncomeBusiness" name="sourceOfIncome" value="Business">
                                                 <label for="inputLoanIncomeBusiness">Business</label>
                                             </div>
                                         </div>
                                         <div class="col-md-9 d-flex flex-column">
                                             <div class="my-1">
-                                                <input type="radio" class="text-uppercase radioSOI" id="inputLoanIncomePension" name="SourceOfIncome" value="Pension">
+                                                <input type="radio" class="text-uppercase radioSOI" id="inputLoanIncomePension" name="sourceOfIncome" value="Pension">
                                                 <label for="inputLoanIncomePension">Pension</label>
                                             </div>
                                             <div class="my-1">
-                                                <input type="radio" class="text-uppercase radioSOI" id="inputLoanIncomeOthers" name="SourceOfIncome" value="Others">
+                                                <input type="radio" class="text-uppercase radioSOI" id="inputLoanIncomeOthers" name="sourceOfIncome" value="Others">
                                                 <label for="inputLoanIncomeOthers">Others</label>
                                                 <input type="text" class="text-uppercase w-50" id="inputLoanIncomeOthersEnter" placeholder="Optional" disabled>
                                             </div>

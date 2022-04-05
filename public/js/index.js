@@ -20,7 +20,7 @@ function insertEndorsements() {
         $('#inputLoanStatusOthers').val(getEmploymentStatusVal);
 
         var getSourceOfIncomeVal = $('#inputLoanIncomeOthersEnter').val();
-        $('#inputLoanIncomeOthers').val(getEmploymentStatusVal);
+        $('#inputLoanIncomeOthers').val(getSourceOfIncomeVal);
 
         console.log(getCitizenshipOtherVal);
         console.log(getEmploymentStatusVal);
@@ -71,7 +71,7 @@ function insertEndorsements() {
         var mothers_maiden_lname_data = $('#inputLoanMothersMaidenLName').val();
         var mothers_maiden_fname_data = $('#inputLoanMothersMaidenFName').val();
         var mothers_maiden_mname_data = $('#inputLoanMothersMaidenMName').val();
-        var source_of_income_data = $('#SOITempStorage').val();
+        var source_of_income_data = $('input[name="sourceOfIncome"]:checked').val();
         var employment_status_data = $('input[name="employmentStatus"]:checked').val();
         var for_employed_data = $('input[name="forEmployed"]:checked').val();
         var for_self_employed_data = $('input[name="forSelfEmployed"]:checked').val();
@@ -119,7 +119,7 @@ function insertEndorsements() {
         formData.append('mothers_maiden_lname', mothers_maiden_lname_data);
         formData.append('mothers_maiden_fname', mothers_maiden_fname_data);
         formData.append('mothers_maiden_mname', mothers_maiden_mname_data);
-        formData.append('source_of_income_datasource_of_income', source_of_income_data);
+        formData.append('source_of_income', source_of_income_data);
         formData.append('employment_status', employment_status_data);
         formData.append('for_employed', for_employed_data);
         formData.append('for_self_employed', for_self_employed_data);
@@ -142,7 +142,6 @@ function insertEndorsements() {
                 
                 success: function(data) {
                     console.log('Data successfully submitted!');
-                    console.log(data);
                 }
             });
         }
@@ -203,7 +202,7 @@ function isOtherInputChecked() {
         });
         $(this).prop('checked', true);
 
-        //Checks if 'Other' option are checked and enable input field
+        //Checks if 'Other' option are checked enable input field
         if ($('#inputLoanIncomeOthers').is(':checked')) {
             $('#inputLoanIncomeOthersEnter').prop('disabled', false);
         } else {
@@ -219,7 +218,7 @@ function isOtherInputChecked() {
         });
         $(this).prop('checked', true);
 
-        // Checks if 'Other' option are checked and enable input field
+        // Checks if 'Other' option are checked enable input field
         if ($('#inputLoanStatusOthers').is(':checked')) {
             $('#inputLoanStatusOthersEnter').prop('disabled', false);
         } else {
@@ -234,7 +233,6 @@ function getTypeOfLoan() {
     // Reusable function for Type of loan repetitive code
     function isTOLChecked(typeOfLoanID){
         typeOfLoanID.click(function() {
-
             var isCheck = $(this).is(':checked');
             isCheck ? typeOfLoanID.val(true) : false;
         });
