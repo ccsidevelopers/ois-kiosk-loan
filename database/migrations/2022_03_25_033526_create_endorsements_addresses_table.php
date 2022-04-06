@@ -16,6 +16,10 @@ class CreateEndorsementsAddressesTable extends Migration
         Schema::create('endorsements_addresses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('endorsement_id');
+            $table->string('unit_number_bld_st_subd_brgy');
+            $table->string('city_municipality');
+            $table->string('province');
+            $table->string('endorsements_address_type');
             $table->timestamps();
         });
     }
