@@ -129,6 +129,9 @@ function insertEndorsements() {
         formData.append('gross_annual_income', gross_annual_income_data);
         formData.append('years_with_employer_in_business', years_with_employer_in_business_data);
         formData.append('months_with_employer_in_business', months_with_employer_in_business_data);
+        
+        //Use this code below to get the file attachment from input=file
+        formData.append('file', $('input[type=file]')[0].files[0]);
     
 
         if(confirm('Submit this info now?')) {
