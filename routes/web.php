@@ -23,4 +23,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/endorsement/create', [EndorsementsController::class, 'create']);
+// Route::post('/endorsement/create', [EndorsementsController::class, 'create']);
+
+Route::post('/endorsement/create', 'EndorsementsController@create');

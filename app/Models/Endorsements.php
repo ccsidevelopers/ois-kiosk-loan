@@ -18,7 +18,7 @@ class Endorsements extends Model
      * 
      * @return bool
      */
-    public function insertEndorsement($data) {
+    public function insertEndorsement(array $data) {
 
         try {
             $validator = Validator::make($data, [

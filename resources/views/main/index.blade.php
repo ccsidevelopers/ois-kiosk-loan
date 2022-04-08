@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="main mh-100 main bg-light ">
                 <div class="main-form d-flex align-items-center justify-content-center p-5">
-                    <form action="" class="form-body w-75 bg-white shadow p-4">
+                    <form class="form-body w-75 bg-white shadow p-4" enctype="multi-part/form-data">
                         <div class="row border-bottom border-3 border-danger py-3">
                             <h1 class="text-uppercase">Loan application form</h1>
                         </div>
@@ -395,7 +395,7 @@
                                 <div class="col-md-12 d-flex align-items-center">
                                     <div class="d-flex flex-column">
                                         <label for="inputLoanAttachmentOfId" class="">ID with Signature</label>
-                                        <input type="file" class="" id="inputLoanAttachmentOfId" name="myfile">
+                                        <input type="file" class="" id="file" name="file">
                                     </div>
                                 </div>
                             </div>
