@@ -21,7 +21,7 @@ class EndorsementsController extends Controller
 
         if($req->file('file')) {
             $fileUploaded = request()->file('file');
-            $fileDate = Carbon::now()->format('y-m-d');
+            $fileDate = Carbon::now()->format('y-m-d-h-m');
             $fileName = $fileDate . '-' . $fileUploaded->getClientOriginalName();
             $filePath = public_path('/images');
             $fileUploaded->move(public_path('images'), $fileName);
