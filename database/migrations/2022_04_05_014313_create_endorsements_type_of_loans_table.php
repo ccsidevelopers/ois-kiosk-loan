@@ -15,7 +15,7 @@ class CreateEndorsementsTypeOfLoansTable extends Migration
     {
         Schema::create('endorsements_type_of_loans', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('endorsement_id');
+            $table->integer('endorsements_id');
             $table->string('motorcycle_loan');
             $table->string('personal_salary_loan');
             $table->string('auto_loan');
